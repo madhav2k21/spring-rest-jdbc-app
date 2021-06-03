@@ -1,5 +1,7 @@
 package com.spring.jdbc.app.repository;
 
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,21 +23,66 @@ public class UserRepository {
 
 	public List<Users> findAll() {
 
+		//Approach-1: Using Custom extractor class: start
+		/*
 		List<Users> users = jdbcTemplate.query(DBQueries.SELECT_ALL_USERS, new UserExtractor());
-		// Instead of creating extractor class , we can use anonymous inner class or
-		// java8 lambda expression here itself
+		*/
+		//Approach-1: Using Custom extractor class: End
+		
+		//Approach-2: Using anonymous inner class start
+		//Approach-2: Using anonymous inner class end
+
+		//Approach-3: Using java8 Lambda expression start (recommended approach)
+		List<Users> users = new ArrayList<>();
+		
+		Object[] params = {};
+
+		jdbcTemplate.query(DBQueries.SELECT_ALL_USERS, (rs) -> {
+
+			while (rs.next() ) {
+				Users user = new Users();
+				user.setId(rs.getInt("ID"));
+				user.setName(rs.getString("NAME"));
+				user.setLocation(rs.getString("LOCATION"));
+				users.add(user);
+			}	
+			
+			return users;
+		}, params);
+		//Approach-2: Using java8 Lambda expression End
+		
+		
 
 		return users;
 	}
 
 	public Users findById(Integer id) {
 
+		//Approach-1: Using Custom extractor class: start
+		/*
 		Object[] params = { id };
 		Users users = jdbcTemplate.query(DBQueries.SELECT_USER_BY_ID, new UserExtractorById(), params);
-		// Instead of creating extractor class , we can use anonymous inner class or
-		// java8 lambda expression here itself
+		*/
+		//Approach-1: Using Custom extractor class: End
+		
+		//Approach-2: Using anonymous inner class start
+		//Approach-2: Using anonymous inner class end
 
-		return users;
+		//Approach-3: Using java8 Lambda expression start (recommended approach)
+		Object[] params = { id };
+		
+		Users user = new Users();
+		
+		jdbcTemplate.query(DBQueries.SELECT_USER_BY_ID, (rs) -> {
+			while (rs.next()) {
+				user.setId(rs.getInt("ID"));
+				user.setName(rs.getString("NAME"));
+				user.setLocation(rs.getString("LOCATION"));
+			}
+			return user;
+		}, params);
+		//Approach-2: Using java8 Lambda expression End
+		
+		return user;
 	}
-
 }
