@@ -30,7 +30,13 @@ public class UserService {
 	
 	public String saveUser(Users user) {
 		int count = userRepository.save(user);
-		return count>0?"User is saved successfully":"Failed to save the user";
+		return count > 0 ? "User is saved successfully" : "Failed to save the user";
+	}
+	
+	public String deleteUserById(Integer id) {
+		int count = userRepository.deleteById(id);
+		//generally we send some status code to UI(angular/react) they will take of displaying status message
+		return count > 0 ? "User is deleted successfully with Id: " + id : "Failed to Delete the user";
 	}
 
 }

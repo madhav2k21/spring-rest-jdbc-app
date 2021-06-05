@@ -140,4 +140,11 @@ public class UserRepository {
 		return count;
 		
 	}
+	
+	public int deleteById(Integer id) {
+		Object[] params = { id };
+		int count = jdbcTemplate.update(DBQueries.DELETE_USER_BY_ID, params);
+		return count;
+
+	}
 }
