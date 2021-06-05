@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.jdbc.app.model.Users;
@@ -35,8 +37,29 @@ public class UserController {
 		List<Users> users = userService.findAllUsers();
 		return users;
 	}
-
-	// Using ResponseEntity is the standard way to bind http methods in our controller
+	
+//****************Sample request body to save User resource Start
+	/*
+	 * id will be auto generated
+	 * http POST request
+	 * http://localhost:8082/users 
+	 {
+  		"name": "TestUser",
+  		"location": "Hyderabad"
+	 }
+	
+	 */
+	
+	@PostMapping(value = "/users")
+	public String saveUser(@RequestBody Users user) {
+		String result = userService.saveUser(user);
+		return result;
+	}
+	//****************Sample request body to save User resource End
+	
+	
+	// Using ResponseEntity is the recommended standard way to bind http methods in
+	// our controller
 
 	// http://localhost:8082/users1/101
 	@GetMapping(value = "/users1/{id}")
@@ -50,6 +73,12 @@ public class UserController {
 	public ResponseEntity<List<Users>> findAllUsers1() {
 		List<Users> users = userService.findAllUsers();
 		return new ResponseEntity<>(users, HttpStatus.OK);
+	}
+
+	@PostMapping(value = "/users1")
+	public ResponseEntity<String> saveUser1(@RequestBody Users user) {
+		String result = userService.saveUser(user);
+		return new ResponseEntity<>(result, HttpStatus.CREATED);
 	}
 
 }

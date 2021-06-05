@@ -131,4 +131,13 @@ public class UserRepository {
 		
 		return user;
 	}
+	
+	
+	public int save(Users user) {
+		// No need to pass id, Id will be auto generated, please refer schema.sql in resources folder
+		Object[] params = {  user.getName(), user.getLocation() };
+		int count = jdbcTemplate.update(DBQueries.INSERT_INTO_USERS, params);
+		return count;
+		
+	}
 }

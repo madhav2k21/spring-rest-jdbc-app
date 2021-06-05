@@ -26,5 +26,11 @@ public class UserService {
 		Users user = userRepository.findById(id);
 		return user;
 	}
+	
+	
+	public String saveUser(Users user) {
+		int count = userRepository.save(user);
+		return count>0?"User is saved successfully":"Failed to save the user";
+	}
 
 }
