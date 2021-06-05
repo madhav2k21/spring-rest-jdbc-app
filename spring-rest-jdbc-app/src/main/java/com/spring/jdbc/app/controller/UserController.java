@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -62,6 +63,21 @@ public class UserController {
 	@DeleteMapping(value = "/users/{id}")
 	public String deleteUserById(@PathVariable("id") Integer id) {
 		String result = userService.deleteUserById(id);
+		return result;
+	}
+	
+	/*
+	 * http PUT request
+	 * http://localhost:8082/users/108 
+	 {
+  		"name": "TestUser1",
+  		"location": "New York"
+	 }
+	
+	 */
+	@PutMapping(value = "/users/{id}")
+	public String updateUserById(@RequestBody Users user, @PathVariable("id") Integer id) {
+		String result = userService.updateUserById(user, id);
 		return result;
 	}
 	

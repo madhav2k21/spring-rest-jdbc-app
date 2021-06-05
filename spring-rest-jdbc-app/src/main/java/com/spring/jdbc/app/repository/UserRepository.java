@@ -147,4 +147,12 @@ public class UserRepository {
 		return count;
 
 	}
+	
+	//we can also take id from request body, then not required put another parameter id, but any approach is fine
+	public int updaetById(Users user, Integer id) {
+		Object[] params = {  user.getName(), user.getLocation(), id };
+		int count = jdbcTemplate.update(DBQueries.UPDATE_USER_BY_ID, params);
+		return count;
+		
+	}
 }

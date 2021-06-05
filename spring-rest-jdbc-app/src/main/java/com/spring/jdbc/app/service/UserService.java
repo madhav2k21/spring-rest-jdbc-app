@@ -33,6 +33,13 @@ public class UserService {
 		return count > 0 ? "User is saved successfully" : "Failed to save the user";
 	}
 	
+	public String updateUserById(Users user, Integer id) {
+		int count = userRepository.updaetById(user, id);
+		//generally we send some status code to UI(angular/react) they will take of displaying status message
+		//or we return the updated user entity
+		return count > 0 ? "User is Updated successfully with Id: " + id : "Failed to Update the user";
+	}
+	
 	public String deleteUserById(Integer id) {
 		int count = userRepository.deleteById(id);
 		//generally we send some status code to UI(angular/react) they will take of displaying status message
