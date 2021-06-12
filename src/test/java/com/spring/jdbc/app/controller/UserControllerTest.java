@@ -31,7 +31,6 @@ class UserControllerTest {
 		when(userService.saveUser(user)).thenReturn("User is saved successfully");
 		String saveUser = userController.saveUser(user);
 		assertEquals("User is saved successfully", saveUser);
-		verify(userRepository, times(1));
 	}
 
 }
