@@ -1,6 +1,8 @@
 package com.spring.jdbc.app.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
@@ -29,6 +31,7 @@ class UserControllerTest {
 		when(userService.saveUser(user)).thenReturn("User is saved successfully");
 		String saveUser = userController.saveUser(user);
 		assertEquals("User is saved successfully", saveUser);
+		verify(userRepository, times(1));
 	}
 
 }
