@@ -2,6 +2,9 @@ package com.spring.jdbc.app.controller;
 
 import java.util.List;
 
+import org.slf4j.ILoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +21,7 @@ import com.spring.jdbc.app.service.UserService;
 
 @RestController
 public class UserController {
-
+	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	private UserService userService;
 
 	@Autowired
@@ -29,14 +32,18 @@ public class UserController {
 	// http://localhost:8082/users/101
 	@GetMapping(value = "/users/{id}")
 	public Users findUserById(@PathVariable("id") Integer id) {
+		logger.info("Inside findUserById in UserController");
 		Users user = userService.findUserById(id);
+		logger.info("Exiting from findUserById in UserController");
 		return user;
 	}
 
 	// http://localhost:8082/users
 	@GetMapping(value = "/users")
 	public List<Users> findAllUsers() {
+		logger.info("Inside findAllUsers in UserController");
 		List<Users> users = userService.findAllUsers();
+		logger.info("Exiting from findAllUsers in UserController");
 		return users;
 	}
 	
@@ -54,7 +61,9 @@ public class UserController {
 	
 	@PostMapping(value = "/users")
 	public String saveUser(@RequestBody Users user) {
+		logger.info("Inside saveUser in UserController");
 		String result = userService.saveUser(user);
+		logger.info("Exiting from saveUser in UserController");
 		return result;
 	}
 	//****************Sample request body to save User resource End
@@ -62,7 +71,9 @@ public class UserController {
 	// http://localhost:8082/users/101
 	@DeleteMapping(value = "/users/{id}")
 	public String deleteUserById(@PathVariable("id") Integer id) {
+		logger.info("Inside deleteUserById in UserController");
 		String result = userService.deleteUserById(id);
+		logger.info("Exiting from deleteUserById in UserController");
 		return result;
 	}
 	
@@ -77,7 +88,9 @@ public class UserController {
 	 */
 	@PutMapping(value = "/users/{id}")
 	public String updateUserById(@RequestBody Users user, @PathVariable("id") Integer id) {
+		logger.info("Inside updateUserById in UserController");
 		String result = userService.updateUserById(user, id);
+		logger.info("Exiting from updateUserById in UserController");
 		return result;
 	}
 	
@@ -89,20 +102,26 @@ public class UserController {
 	// http://localhost:8082/users1/101
 	@GetMapping(value = "/users1/{id}")
 	public ResponseEntity<Users> findUserById1(@PathVariable("id") Integer id) {
+		logger.info("Inside findUserById1 in UserController");
 		Users user = userService.findUserById(id);
+		logger.info("Exiting from findUserById1 in UserController");
 		return new ResponseEntity<>(user, HttpStatus.OK);
 	}
 
 	// http://localhost:8082/users1
 	@GetMapping(value = "/users1")
 	public ResponseEntity<List<Users>> findAllUsers1() {
+		logger.info("Inside findAllUsers1 in UserController");
 		List<Users> users = userService.findAllUsers();
+		logger.info("Exiting from findAllUsers1 in UserController");
 		return new ResponseEntity<>(users, HttpStatus.OK);
 	}
 
 	@PostMapping(value = "/users1")
 	public ResponseEntity<String> saveUser1(@RequestBody Users user) {
+		logger.info("Inside saveUser1 in UserController");
 		String result = userService.saveUser(user);
+		logger.info("Exiting from saveUser1 in UserController");
 		return new ResponseEntity<>(result, HttpStatus.CREATED);
 	}
 
