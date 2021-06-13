@@ -135,3 +135,379 @@
 2021-06-13 07:35:27.581  INFO 2596 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
 2021-06-13 07:35:27.597  INFO 2596 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
 2021-06-13 07:35:35.197  INFO 2596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 08:45:18.650  INFO 3508 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 3508 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 08:45:18.682  INFO 3508 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 08:45:24.921  INFO 3508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 08:45:25.601  INFO 3508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 08:45:25.623  INFO 3508 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 08:45:27.110  INFO 3508 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 08:45:27.111  INFO 3508 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 08:45:27.114  INFO 3508 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 08:45:27.169  INFO 3508 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 9.566 seconds (JVM running for 14.901)
+2021-06-13 08:45:27.172  INFO 3508 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 08:45:27.175  INFO 3508 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 08:45:27.454  INFO 3508 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 08:45:27.467  INFO 3508 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 08:46:10.195  INFO 3508 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 08:46:10.218  INFO 3508 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 08:50:03.713  INFO 9252 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 9252 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 08:50:03.728  INFO 9252 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 08:50:07.883  INFO 9252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 08:50:08.315  INFO 9252 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 08:50:08.332  INFO 9252 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 08:50:09.408  INFO 9252 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 08:50:09.409  INFO 9252 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 08:50:09.412  INFO 9252 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 08:50:09.464  INFO 9252 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.601 seconds (JVM running for 9.301)
+2021-06-13 08:50:09.467  INFO 9252 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 08:50:09.470  INFO 9252 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 08:50:09.673  INFO 9252 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 08:50:09.680  INFO 9252 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 08:50:09.992  INFO 9252 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 08:50:09.994  INFO 9252 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:03:13.418  INFO 7356 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 7356 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 09:03:13.426  INFO 7356 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 09:03:18.193  INFO 7356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 09:03:18.940  INFO 7356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 09:03:18.963  INFO 7356 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 09:03:20.112  INFO 7356 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 09:03:20.113  INFO 7356 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 09:03:20.118  INFO 7356 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2021-06-13 09:03:20.191  INFO 7356 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 7.947 seconds (JVM running for 10.43)
+2021-06-13 09:03:20.199  INFO 7356 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 09:03:20.215  INFO 7356 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 09:03:20.452  INFO 7356 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 09:03:20.457  INFO 7356 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:03:20.793  INFO 7356 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 09:03:20.795  INFO 7356 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:03:20.861  INFO 7356 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 09:07:09.740  INFO 7336 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 7336 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 09:07:09.747  INFO 7336 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 09:07:16.950  INFO 7336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 09:07:17.699  INFO 7336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 09:07:17.715  INFO 7336 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 09:07:19.283  INFO 7336 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 09:07:19.284  INFO 7336 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 09:07:19.286  INFO 7336 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 09:07:19.364  INFO 7336 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 10.608 seconds (JVM running for 13.419)
+2021-06-13 09:07:19.370  INFO 7336 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 09:07:19.374  INFO 7336 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 09:07:19.621  INFO 7336 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 09:07:19.630  INFO 7336 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:07:20.114  INFO 7336 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 09:07:20.118  INFO 7336 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:08:57.446  INFO 8684 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 8684 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 09:08:57.454  INFO 8684 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 09:09:02.654  INFO 8684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 09:09:03.169  INFO 8684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 09:09:03.190  INFO 8684 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 09:09:05.032  INFO 8684 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 09:09:05.033  INFO 8684 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 09:09:05.036  INFO 8684 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 09:09:05.116  INFO 8684 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 8.713 seconds (JVM running for 11.35)
+2021-06-13 09:09:05.130  INFO 8684 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 09:09:05.150  INFO 8684 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 09:09:05.314  INFO 8684 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 09:09:05.331  INFO 8684 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:09:05.777  INFO 8684 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 09:09:05.778  INFO 8684 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 09:09:05.864  INFO 8684 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 10:18:58.806  INFO 5392 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 5392 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 10:18:58.813  INFO 5392 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 10:19:03.194  INFO 5392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 10:19:03.743  INFO 5392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 10:19:03.761  INFO 5392 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 10:19:04.809  INFO 5392 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 10:19:04.810  INFO 5392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 10:19:04.813  INFO 5392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 10:19:04.859  INFO 5392 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.868 seconds (JVM running for 9.433)
+2021-06-13 10:19:04.863  INFO 5392 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 10:19:04.867  INFO 5392 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 10:19:05.007  INFO 5392 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:19:05.014  INFO 5392 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:19:05.274  INFO 5392 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 10:19:05.276  INFO 5392 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 10:19:05.669  INFO 5392 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:19:05.672  INFO 5392 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:23:25.207  INFO 10368 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 10368 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 10:23:25.214  INFO 10368 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 10:23:29.484  INFO 10368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 10:23:29.913  INFO 10368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 10:23:29.929  INFO 10368 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 10:23:30.944  INFO 10368 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 10:23:30.945  INFO 10368 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 10:23:30.949  INFO 10368 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 10:23:31.046  INFO 10368 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.698 seconds (JVM running for 9.302)
+2021-06-13 10:23:31.051  INFO 10368 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 10:23:31.056  INFO 10368 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 10:23:31.313  INFO 10368 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 10:23:31.325  INFO 10368 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 10:24:21.344  INFO 10400 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 10400 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 10:24:21.351  INFO 10400 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 10:24:25.735  INFO 10400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 10:24:26.239  INFO 10400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 10:24:26.255  INFO 10400 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 10:24:27.304  INFO 10400 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 10:24:27.305  INFO 10400 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 10:24:27.308  INFO 10400 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 10:24:27.360  INFO 10400 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.874 seconds (JVM running for 9.677)
+2021-06-13 10:24:27.363  INFO 10400 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 10:24:27.366  INFO 10400 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 10:24:27.497  INFO 10400 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:24:27.505  INFO 10400 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:24:27.781  INFO 10400 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 10:24:27.784  INFO 10400 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 10:24:28.133  INFO 10400 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:24:28.135  INFO 10400 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:25:24.229  INFO 10772 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 10772 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 10:25:24.238  INFO 10772 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 10:25:28.733  INFO 10772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 10:25:29.238  INFO 10772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 10:25:29.254  INFO 10772 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 10:25:30.264  INFO 10772 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 10:25:30.265  INFO 10772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 10:25:30.267  INFO 10772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-06-13 10:25:30.309  INFO 10772 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.93 seconds (JVM running for 9.492)
+2021-06-13 10:25:30.312  INFO 10772 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 10:25:30.315  INFO 10772 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 10:25:30.553  INFO 10772 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 10:25:30.561  INFO 10772 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 10:26:38.315  INFO 11260 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 11260 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 10:26:38.323  INFO 11260 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 10:26:42.560  INFO 11260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 10:26:43.023  INFO 11260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 10:26:43.039  INFO 11260 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 10:26:44.062  INFO 11260 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 10:26:44.063  INFO 11260 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 10:26:44.065  INFO 11260 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 10:26:44.123  INFO 11260 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.613 seconds (JVM running for 8.912)
+2021-06-13 10:26:44.126  INFO 11260 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 10:26:44.129  INFO 11260 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 10:26:44.259  INFO 11260 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:26:44.264  INFO 11260 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:26:44.421  INFO 11260 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 10:26:44.423  INFO 11260 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 10:26:44.752  INFO 11260 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:26:44.758  INFO 11260 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:53:15.413  INFO 3404 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 3404 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 10:53:15.421  INFO 3404 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 10:53:19.767  INFO 3404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 10:53:20.268  INFO 3404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 10:53:20.286  INFO 3404 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 10:53:21.391  INFO 3404 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 10:53:21.392  INFO 3404 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 10:53:21.394  INFO 3404 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 10:53:21.445  INFO 3404 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.959 seconds (JVM running for 9.32)
+2021-06-13 10:53:21.448  INFO 3404 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 10:53:21.451  INFO 3404 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 10:53:21.631  INFO 3404 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:53:21.640  INFO 3404 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 10:53:21.791  INFO 3404 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 10:53:21.793  INFO 3404 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 10:53:22.097  INFO 3404 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 10:53:22.099  INFO 3404 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:25:14.811  INFO 10216 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 10216 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:25:14.820  INFO 10216 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:25:20.528  INFO 10216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:25:21.223  INFO 10216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:25:21.246  INFO 10216 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:25:22.634  INFO 10216 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:25:22.635  INFO 10216 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:25:22.638  INFO 10216 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 12:25:22.706  INFO 10216 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 9.207 seconds (JVM running for 12.904)
+2021-06-13 12:25:22.710  INFO 10216 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:25:22.713  INFO 10216 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:25:22.874  INFO 10216 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:25:22.884  INFO 10216 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:25:53.271  INFO 10216 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 12:25:53.286  INFO 10216 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 12:26:04.841  INFO 10216 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:26:04.845  INFO 10216 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:26:06.664  INFO 10216 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 12:26:06.677  INFO 10216 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-13 12:26:35.050  INFO 10568 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 10568 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:26:35.058  INFO 10568 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:26:39.422  INFO 10568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:26:39.871  INFO 10568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:26:39.881  INFO 10568 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:26:40.903  INFO 10568 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:26:40.904  INFO 10568 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:26:40.906  INFO 10568 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 12:26:40.949  INFO 10568 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.75 seconds (JVM running for 9.104)
+2021-06-13 12:26:40.952  INFO 10568 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:26:40.955  INFO 10568 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:26:41.175  INFO 10568 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:26:41.182  INFO 10568 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:26:41.458  INFO 10568 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 12:29:03.040  INFO 5524 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 5524 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:29:03.048  INFO 5524 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:29:08.762  INFO 5524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:29:09.360  INFO 5524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:29:09.379  INFO 5524 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:29:10.636  INFO 5524 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:29:10.637  INFO 5524 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:29:10.640  INFO 5524 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 12:29:10.700  INFO 5524 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 8.727 seconds (JVM running for 12.264)
+2021-06-13 12:29:10.704  INFO 5524 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:29:10.708  INFO 5524 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:29:10.869  INFO 5524 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:29:10.883  INFO 5524 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:29:23.179  INFO 5524 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:29:23.195  INFO 5524 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:30:27.411  INFO 5524 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:30:27.413  INFO 5524 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:30:28.150  INFO 5524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 12:30:40.089  INFO 7292 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 7292 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:30:40.099  INFO 7292 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:30:46.593  INFO 7292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:30:47.627  INFO 7292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:30:47.659  INFO 7292 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:30:50.436  INFO 7292 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:30:50.437  INFO 7292 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:30:50.441  INFO 7292 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2021-06-13 12:30:50.496  INFO 7292 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 11.618 seconds (JVM running for 14.766)
+2021-06-13 12:30:50.499  INFO 7292 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:30:50.502  INFO 7292 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:30:50.688  INFO 7292 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:30:50.704  INFO 7292 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:30:50.968  INFO 7292 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:30:50.969  INFO 7292 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:30:51.496  INFO 7292 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:30:51.499  INFO 7292 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:31:53.268  INFO 11888 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 11888 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:31:53.276  INFO 11888 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:31:57.669  INFO 11888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:31:58.126  INFO 11888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:31:58.142  INFO 11888 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:31:59.187  INFO 11888 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:31:59.188  INFO 11888 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:31:59.190  INFO 11888 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-06-13 12:31:59.242  INFO 11888 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.76 seconds (JVM running for 9.008)
+2021-06-13 12:31:59.245  INFO 11888 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:31:59.248  INFO 11888 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:31:59.389  INFO 11888 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:31:59.396  INFO 11888 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:31:59.529  INFO 11888 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:31:59.530  INFO 11888 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:31:59.913  INFO 11888 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:31:59.915  INFO 11888 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:34:04.851  INFO 4652 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 4652 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:34:04.860  INFO 4652 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:34:10.551  INFO 4652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:34:11.227  INFO 4652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:34:11.248  INFO 4652 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:34:12.464  INFO 4652 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:34:12.465  INFO 4652 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:34:12.468  INFO 4652 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 12:34:12.526  INFO 4652 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 8.802 seconds (JVM running for 12.132)
+2021-06-13 12:34:12.529  INFO 4652 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:34:12.532  INFO 4652 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:34:12.682  INFO 4652 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:34:12.691  INFO 4652 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:34:32.078  INFO 4652 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:34:32.093  INFO 4652 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:36:35.525  INFO 4652 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:36:35.527  INFO 4652 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:36:35.577  INFO 4652 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 12:36:58.244  INFO 5240 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 5240 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:36:58.255  INFO 5240 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:37:05.769  INFO 5240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:37:06.677  INFO 5240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:37:06.699  INFO 5240 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:37:08.408  INFO 5240 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:37:08.409  INFO 5240 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:37:08.412  INFO 5240 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2021-06-13 12:37:08.489  INFO 5240 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 11.579 seconds (JVM running for 15.837)
+2021-06-13 12:37:08.493  INFO 5240 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:37:08.496  INFO 5240 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:37:08.752  INFO 5240 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:37:08.764  INFO 5240 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:37:09.016  INFO 5240 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:37:09.018  INFO 5240 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:37:09.690  INFO 5240 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:37:09.691  INFO 5240 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:38:20.823  INFO 908 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 908 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:38:20.832  INFO 908 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:38:25.182  INFO 908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:38:25.671  INFO 908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:38:25.688  INFO 908 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:38:26.726  INFO 908 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:38:26.727  INFO 908 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:38:26.729  INFO 908 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-06-13 12:38:26.780  INFO 908 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.793 seconds (JVM running for 8.982)
+2021-06-13 12:38:26.783  INFO 908 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:38:26.786  INFO 908 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:38:26.915  INFO 908 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:38:26.924  INFO 908 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:38:27.081  INFO 908 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:38:27.083  INFO 908 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:38:27.471  INFO 908 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:38:27.473  INFO 908 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:39:00.596  INFO 11692 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 11692 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:39:00.606  INFO 11692 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:39:05.474  INFO 11692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:39:05.985  INFO 11692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:39:06.002  INFO 11692 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:39:07.062  INFO 11692 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:39:07.063  INFO 11692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:39:07.067  INFO 11692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2021-06-13 12:39:07.116  INFO 11692 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 7.598 seconds (JVM running for 10.203)
+2021-06-13 12:39:07.122  INFO 11692 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:39:07.125  INFO 11692 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:39:07.271  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:39:07.280  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:39:07.430  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:39:07.432  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:39:07.706  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 12:39:07.708  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 12:39:07.893  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:39:07.895  INFO 11692 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:39:07.936  INFO 11692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 12:39:43.078  INFO 11944 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 11944 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 12:39:43.087  INFO 11944 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 12:39:47.322  INFO 11944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 12:39:47.805  INFO 11944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 12:39:47.821  INFO 11944 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 12:39:48.869  INFO 11944 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 12:39:48.870  INFO 11944 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 12:39:48.873  INFO 11944 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 12:39:48.913  INFO 11944 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 6.628 seconds (JVM running for 9.473)
+2021-06-13 12:39:48.916  INFO 11944 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 12:39:48.919  INFO 11944 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 12:39:49.064  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:39:49.070  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:39:49.216  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 12:39:49.218  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 12:39:49.554  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Inside findUserById in UserController
+2021-06-13 12:39:49.556  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findUserById in UserController
+2021-06-13 12:39:49.694  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Inside saveUser in UserController
+2021-06-13 12:39:49.696  INFO 11944 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from saveUser in UserController
+2021-06-13 12:39:49.737  INFO 11944 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 14:12:44.284  INFO 11184 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 11184 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 14:12:44.294  INFO 11184 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 14:12:49.997  INFO 11184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 14:12:50.673  INFO 11184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 14:12:50.695  INFO 11184 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 14:12:52.081  INFO 11184 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 14:12:52.082  INFO 11184 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 14:12:52.085  INFO 11184 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-06-13 14:12:52.147  INFO 11184 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 8.977 seconds (JVM running for 12.379)
+2021-06-13 14:12:52.151  INFO 11184 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 14:12:52.155  INFO 11184 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 14:12:52.422  INFO 11184 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 14:12:52.431  INFO 11184 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 14:12:52.909  INFO 11184 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-13 14:13:49.267  INFO 8312 --- [main] c.s.j.app.controller.UserControllerTest  : Starting UserControllerTest using Java 15.0.2 on DESKTOP-L9GCA0B with PID 8312 (started by madhav in C:\Users\madhav\git3\spring-rest-jdbc-app)
+2021-06-13 14:13:49.276  INFO 8312 --- [main] c.s.j.app.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2021-06-13 14:13:54.870  INFO 8312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-13 14:13:55.487  INFO 8312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-13 14:13:55.508  INFO 8312 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-06-13 14:13:56.826  INFO 8312 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-06-13 14:13:56.827  INFO 8312 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-06-13 14:13:56.829  INFO 8312 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-06-13 14:13:56.884  INFO 8312 --- [main] c.s.j.app.controller.UserControllerTest  : Started UserControllerTest in 8.66 seconds (JVM running for 11.821)
+2021-06-13 14:13:56.889  INFO 8312 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-13 14:13:56.892  INFO 8312 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-13 14:13:57.179  INFO 8312 --- [main] c.s.jdbc.app.controller.UserController   : Inside findAllUsers in UserController
+2021-06-13 14:13:57.188  INFO 8312 --- [main] c.s.jdbc.app.controller.UserController   : Exiting from findAllUsers in UserController
+2021-06-13 14:17:22.038  INFO 8312 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
