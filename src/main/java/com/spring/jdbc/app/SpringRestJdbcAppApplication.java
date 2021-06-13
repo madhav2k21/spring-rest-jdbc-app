@@ -2,12 +2,21 @@ package com.spring.jdbc.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.spring.jdbc.app.service.UsrService;
+import com.spring.jdbc.app.util.DateUtils;
 
 @SpringBootApplication
 public class SpringRestJdbcAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRestJdbcAppApplication.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(SpringRestJdbcAppApplication.class, args);
+//		DateUtils bean = context.getBean(DateUtils.class);
+		
+		UsrService userService = context.getBean(UsrService.class);
+		userService.saveUser();
+//		System.exit(0);
 	}
 
 }
