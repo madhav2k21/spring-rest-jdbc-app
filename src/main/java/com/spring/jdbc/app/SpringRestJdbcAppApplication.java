@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import com.spring.jdbc.app.service.UsrService;
-import com.spring.jdbc.app.util.DateUtils;
 
 @SpringBootApplication
 public class SpringRestJdbcAppApplication {

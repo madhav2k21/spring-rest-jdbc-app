@@ -1,6 +1,7 @@
 package com.spring.jdbc.app.controller;
 
 import static org.hamcrest.CoreMatchers.any;
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -23,6 +24,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -57,7 +59,7 @@ class UserControllerTest {
 
 	@Test
 	void testSaveUser() {
-		final String EXPECTED_RESULT = "User is saved successfully";
+//		final String EXPECTED_RESULT = "User is saved successfully";
 		Users user = new Users(109, "madhav", "HYD");
 		when(userRepository.save(user)).thenReturn(1);
 
@@ -65,6 +67,8 @@ class UserControllerTest {
 		String saveUser = userController.saveUser(user);
 		assertEquals(EXPECTED_RESULT, saveUser);
 	}
+	
+	
 
 	@Test
 	public void testControllerSaveUser() throws Exception {
@@ -76,13 +80,29 @@ class UserControllerTest {
 		when(userService.saveUser(user)).thenReturn(EXPECTED_RESULT);
 		this.mockMvc.perform(post("/users")
 				.content(jsonRequest)
-				.contentType(MediaType.APPLICATION_JSON))
+				.contentType(MediaType.APPLICATION_JSON).accept(MediaType.TEXT_PLAIN))
 				.andDo(print())
-				.andExpect(status().isOk());
-//				.andReturn().getResponse().equals(EXPECTED_RESULT);
+				.andExpect(status().isOk())
+				.andExpect(content().string(EXPECTED_RESULT));                          
+//				.andReturn().equals("1234");
+//		System.out.println("{}=> "+andReturn.getResponse().getContentAsString());
+//				.andReturn().getResponse().getContentAsString().equals(EXPECTED_RESULT);
 		
 //				.andExpect(content().string(EXPECTED_RESULT));
 
+	}
+	
+	@Test
+	public void shouldReturnDefaultMessage() throws Exception {
+		Users user = new Users(109, "madhav", "HYD");
+		String jsonRequest = javaToJsonObject(user);
+		when(userRepository.save(user)).thenReturn(1);
+		when(userService.saveUser(user)).thenReturn(EXPECTED_RESULT);
+		
+		this.mockMvc.perform(post("/users").content(jsonRequest).contentType(MediaType.APPLICATION_JSON))
+		
+		.andDo(print()).andExpect(status().isOk())
+		.andExpect(content().string(containsString(EXPECTED_RESULT)));
 	}
 
 	private String javaToJsonObject(Users user) throws JsonProcessingException {
@@ -140,8 +160,8 @@ class UserControllerTest {
 				.content(jsonRequest))
 				.andDo(print())
 				.andExpect(status()
-				.isOk());
-//				.andExpect(content().string(UPD_EXPECTED_RESULT+" "+u1.getId()));
+				.isOk())
+				.andExpect(content().string(UPD_EXPECTED_RESULT+" "+u1.getId()));
 				
 		
 	}

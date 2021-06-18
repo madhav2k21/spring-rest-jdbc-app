@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.jdbc.app.model.Users;
@@ -60,7 +61,7 @@ public class UserController {
 	 */
 	
 	@PostMapping(value = "/users")
-	public String saveUser(@RequestBody Users user) {
+	public @ResponseBody String saveUser(@RequestBody Users user) {
 		logger.info("Inside saveUser in UserController");
 		String result = userService.saveUser(user);
 		logger.info("Exiting from saveUser in UserController");
