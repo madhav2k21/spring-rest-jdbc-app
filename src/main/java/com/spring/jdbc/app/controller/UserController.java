@@ -1,10 +1,14 @@
 package com.spring.jdbc.app.controller;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -31,43 +35,54 @@ public class UserController {
 
 	// http://localhost:8082/users/101
 	@GetMapping(value = "/users/{id}")
-	public Users findUserById(@PathVariable("id") Integer id) {
+	public EntityModel<Users> findUserById(@PathVariable("id") Integer id) {
 		logger.info("Inside findUserById in UserController");
 		Users user = userService.findUserById(id);
 		logger.info("Exiting from findUserById in UserController");
-		return user;
+
+		return EntityModel.of(user, linkTo(methodOn(UserController.class).findUserById(id)).withSelfRel(),
+				linkTo(methodOn(UserController.class).findAllUsers()).withRel("users"));
+//		return user;
 	}
 
 	// http://localhost:8082/users
-	@GetMapping(value = "/users")
-	public List<Users> findAllUsers() {
+	@GetMapping(value = "/usersss")
+
+	public List<Users> findAllUsers3() {
 		logger.info("Inside findAllUsers in UserController");
 		List<Users> users = userService.findAllUsers();
 		logger.info("Exiting from findAllUsers in UserController");
 		return users;
 	}
-	
+
+	@GetMapping(value = "/users")
+	public CollectionModel<EntityModel<Users>> findAllUsers() {
+
+		List<EntityModel<Users>> users = userService.findAllUsers().stream()
+				.map(user -> EntityModel.of(user,
+						linkTo(methodOn(UserController.class).findUserById(user.getId())).withSelfRel(),
+						linkTo(methodOn(UserController.class).findAllUsers()).withRel("users")))
+				.collect(Collectors.toList());
+
+		return CollectionModel.of(users, linkTo(methodOn(UserController.class).findAllUsers()).withSelfRel());
+	}
+
 //****************Sample request body to save User resource Start
 	/*
-	 * id will be auto generated
-	 * http POST request
-	 * http://localhost:8082/users 
-	 {
-  		"name": "TestUser",
-  		"location": "Hyderabad"
-	 }
-	
+	 * id will be auto generated http POST request http://localhost:8082/users {
+	 * "name": "TestUser", "location": "Hyderabad" }
+	 * 
 	 */
-	
+
 	@PostMapping(value = "/users")
 	public @ResponseBody Users saveUser(@RequestBody Users user) {
 		logger.info("Inside saveUser in UserController");
-		 user = userService.saveUser(user);
+		user = userService.saveUser(user);
 		logger.info("Exiting from saveUser in UserController");
 		return user;
 	}
-	//****************Sample request body to save User resource End
-	
+	// ****************Sample request body to save User resource End
+
 	// http://localhost:8082/users/101
 	@DeleteMapping(value = "/users/{id}")
 	public String deleteUserById(@PathVariable("id") Integer id) {
@@ -76,15 +91,11 @@ public class UserController {
 		logger.info("Exiting from deleteUserById in UserController");
 		return result;
 	}
-	
+
 	/*
-	 * http PUT request
-	 * http://localhost:8082/users/108 
-	 {
-  		"name": "TestUser1",
-  		"location": "New York"
-	 }
-	
+	 * http PUT request http://localhost:8082/users/108 { "name": "TestUser1",
+	 * "location": "New York" }
+	 * 
 	 */
 	@PutMapping(value = "/users/{id}")
 	public String updateUserById(@RequestBody Users user, @PathVariable("id") Integer id) {
@@ -93,9 +104,7 @@ public class UserController {
 		logger.info("Exiting from updateUserById in UserController");
 		return result;
 	}
-	
-	
-	
+
 	// Using ResponseEntity is the recommended standard way to bind http methods in
 	// our controller
 
@@ -124,7 +133,7 @@ public class UserController {
 		logger.info("Exiting from saveUser1 in UserController");
 		return new ResponseEntity<>(user, HttpStatus.CREATED);
 	}
-	
+
 	@PutMapping(value = "/users1/{id}")
 	public ResponseEntity<String> updateUserById1(@RequestBody Users user, @PathVariable("id") Integer id) {
 		logger.info("Inside updateUserById in UserController");
