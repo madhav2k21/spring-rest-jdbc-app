@@ -2,7 +2,6 @@ package com.spring.jdbc.app.controller;
 
 import java.util.List;
 
-import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,11 +60,11 @@ public class UserController {
 	 */
 	
 	@PostMapping(value = "/users")
-	public @ResponseBody String saveUser(@RequestBody Users user) {
+	public @ResponseBody Users saveUser(@RequestBody Users user) {
 		logger.info("Inside saveUser in UserController");
-		String result = userService.saveUser(user);
+		 user = userService.saveUser(user);
 		logger.info("Exiting from saveUser in UserController");
-		return result;
+		return user;
 	}
 	//****************Sample request body to save User resource End
 	
@@ -119,11 +118,19 @@ public class UserController {
 	}
 
 	@PostMapping(value = "/users1")
-	public ResponseEntity<String> saveUser1(@RequestBody Users user) {
+	public ResponseEntity<Users> saveUser1(@RequestBody Users user) {
 		logger.info("Inside saveUser1 in UserController");
-		String result = userService.saveUser(user);
+		user = userService.saveUser(user);
 		logger.info("Exiting from saveUser1 in UserController");
-		return new ResponseEntity<>(result, HttpStatus.CREATED);
+		return new ResponseEntity<>(user, HttpStatus.CREATED);
+	}
+	
+	@PutMapping(value = "/users/{id}")
+	public ResponseEntity<String> updateUserById1(@RequestBody Users user, @PathVariable("id") Integer id) {
+		logger.info("Inside updateUserById in UserController");
+		String result = userService.updateUserById(user, id);
+		logger.info("Exiting from updateUserById in UserController");
+		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
 }

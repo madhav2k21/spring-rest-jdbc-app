@@ -155,4 +155,24 @@ public class UserRepository {
 		return count;
 		
 	}
+	
+	public Users findLatestUser() {
+
+		Object[] params = {};
+
+		Users user = new Users();
+
+		jdbcTemplate.query(DBQueries.LATEST_USER, (rs) -> {
+			while (rs.next()) {
+				user.setId(rs.getInt("ID"));
+				user.setName(rs.getString("NAME"));
+				user.setLocation(rs.getString("LOCATION"));
+			}
+			return user;
+		}, params);
+
+		// Approach-3: Using java8 Lambda expression End
+
+		return user;
+	}
 }

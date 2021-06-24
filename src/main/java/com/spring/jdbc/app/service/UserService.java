@@ -28,9 +28,11 @@ public class UserService {
 	}
 	
 	
-	public String saveUser(Users user) {
+	public Users saveUser(Users user) {
 		int count = userRepository.save(user);
-		return count > 0 ? "User is saved successfully" : "Failed to save the user";
+		
+		
+		return count > 0 ? userRepository.findLatestUser() : new Users();
 	}
 	
 	public String updateUserById(Users user, Integer id) {
