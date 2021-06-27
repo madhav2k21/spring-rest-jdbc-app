@@ -26,7 +26,7 @@ class ITUserControllerTest {
 //	@Test
 	public void testFindAllUsers() throws JSONException {
 		TestRestTemplate tr=new TestRestTemplate();
-		ResponseEntity<String> entity = tr.getForEntity("http://localhost:8082/users", String.class);
+		ResponseEntity<String> entity = tr.getForEntity("http://localhost:8082/v1/users", String.class);
 		HttpStatus status = entity.getStatusCode();
 		System.out.println(status);
 		System.out.println(entity.getBody());
@@ -44,7 +44,7 @@ class ITUserControllerTest {
 		header.setContentType(MediaType.APPLICATION_JSON);
 		HttpEntity<Users> hentity=new HttpEntity<>(user, header);
 		Object[] params= {};
-		ResponseEntity<String> entity = tr.postForEntity("http://localhost:8082/users",hentity, String.class, params);
+		ResponseEntity<String> entity = tr.postForEntity("http://localhost:8082/v1/users",hentity, String.class, params);
  
 		
 		HttpStatus status = entity.getStatusCode();
