@@ -1,10 +1,14 @@
 package com.spring.jdbc.app.controller;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,7 +26,7 @@ import com.spring.jdbc.app.service.UserService;
 @RestController
 public class UserController {
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
-	private UserService userService;
+	private final UserService userService;
 
 	@Autowired
 	public UserController(UserService userService) {
@@ -100,7 +104,7 @@ public class UserController {
 	// our controller
 
 	// http://localhost:8082/users1/101
-	@GetMapping(value = "/users1/{id}")
+	@GetMapping(value = "/v1/users/{id}")
 	public ResponseEntity<Users> findUserById1(@PathVariable("id") Integer id) {
 		logger.info("Inside findUserById1 in UserController");
 		Users user = userService.findUserById(id);
@@ -109,7 +113,7 @@ public class UserController {
 	}
 
 	// http://localhost:8082/users1
-	@GetMapping(value = "/users1")
+	@GetMapping(value = "/v1/users")
 	public ResponseEntity<List<Users>> findAllUsers1() {
 		logger.info("Inside findAllUsers1 in UserController");
 		List<Users> users = userService.findAllUsers();
@@ -117,7 +121,7 @@ public class UserController {
 		return new ResponseEntity<>(users, HttpStatus.OK);
 	}
 
-	@PostMapping(value = "/users1")
+	@PostMapping(value = "/v1/users")
 	public ResponseEntity<Users> saveUser1(@RequestBody Users user) {
 		logger.info("Inside saveUser1 in UserController");
 		user = userService.saveUser(user);
@@ -125,12 +129,31 @@ public class UserController {
 		return new ResponseEntity<>(user, HttpStatus.CREATED);
 	}
 	
-	@PutMapping(value = "/users1/{id}")
+	@PutMapping(value = "/v1/users/{id}")
 	public ResponseEntity<String> updateUserById1(@RequestBody Users user, @PathVariable("id") Integer id) {
 		logger.info("Inside updateUserById in UserController");
 		String result = userService.updateUserById(user, id);
 		logger.info("Exiting from updateUserById in UserController");
 		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+	//	http://localhost:8082/v2/users
+	@GetMapping(value = "/v2/users")
+	public CollectionModel<EntityModel<Users>> findAllUsersHateoas() {
+
+		List<EntityModel<Users>> users = userService.findAllUsers().stream()
+				.map(user -> EntityModel.of(user,
+						linkTo(methodOn(UserController.class).findUserByIdHateoas(user.getId())).withSelfRel(),
+						linkTo(methodOn(UserController.class).findAllUsersHateoas()).withRel("v2/users")))
+				.collect(Collectors.toList());
+		return CollectionModel.of(users, linkTo(methodOn(UserController.class).findAllUsersHateoas()).withSelfRel());
+	}
+//	http://localhost:8082/v2/users/101
+	@GetMapping(value = "/v2/users/{id}")
+	public EntityModel<Users> findUserByIdHateoas(@PathVariable("id") Integer id) {
+		Users user = userService.findUserById(id);
+
+		return EntityModel.of(user, linkTo(methodOn(UserController.class).findUserByIdHateoas(id)).withSelfRel(),
+				linkTo(methodOn(UserController.class).findAllUsersHateoas()).withRel("v2/users"));
 	}
 
 }
