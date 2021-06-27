@@ -7,10 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.spring.jdbc.app.util.BookService;
 
-@SpringBootTest
+//@SpringBootTest
 class SpringRestJdbcAppApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 	
