@@ -1,6 +1,6 @@
 logging:
-  file:
-    name: log/my-logs.log
+#  file:
+#    name: log/my-logs.log
   level:
     org:
       springframework:

@@ -19,6 +19,11 @@ public class Users {
 		this.location = location;
 	}
 
+	public Users(String name, String location) {
+		this.name = name;
+		this.location = location;
+	}
+
 	public Integer getId() {
 		return id;
 	}

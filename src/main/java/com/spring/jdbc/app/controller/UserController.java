@@ -125,7 +125,7 @@ public class UserController {
 		return new ResponseEntity<>(user, HttpStatus.CREATED);
 	}
 	
-	@PutMapping(value = "/users/{id}")
+	@PutMapping(value = "/users1/{id}")
 	public ResponseEntity<String> updateUserById1(@RequestBody Users user, @PathVariable("id") Integer id) {
 		logger.info("Inside updateUserById in UserController");
 		String result = userService.updateUserById(user, id);
