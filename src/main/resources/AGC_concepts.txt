@@ -1,0 +1,12 @@
+Association: may exist between objects of different types or between the objects of the same class
+A------->B
+Aggregation: 
+In a plain association, classes are considered at the same level with one class having no more importance than the other. Somtimes you do need to define a "whole/part" relationship where one class (whole) consists of smaller classes (part). This kind of relationship is called aggregation. It is also known as a 
+has-a relationship as object of the whole has objects of the part/
+Company<>--------Person
+Composition:
+As we have seen aggregation relationship makes a distinction between "whole" and "part" but doesn't force an ownership and it also doesn't link the "whole" and "part" object in such a way that if whole is destroyed, parts are also destroyed.
+There is a variation of aggregation called composition which has strong ownership, 
+thus the scope of the whole and part are related. In composition if there are two classes, class A (whole) and class B(part) then destruction of class A object will mean class B object will also does not exist whilch also means class B object may be a part of class A object only.
+Composition in UML is drawn as a filled diamond at the whole end
+School<*>------Department
